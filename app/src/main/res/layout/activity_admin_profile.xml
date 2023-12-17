@@ -1,0 +1,53 @@
+<!-- activity_admin_profile.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminProfileActivity">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Amlan Mallick"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTextView"
+        android:layout_marginTop="99dp"
+        android:text="knight.red205@gmail.com"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/returnDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailTextView"
+        android:layout_marginTop="68dp"
+        android:text="Return Date: DD/MM/YYYY"
+        android:textSize="18sp" />
+    <!-- activity_admin_profile.xml -->
+    <!-- ... Existing TextViews for displaying admin information -->
+
+    <Button
+        android:id="@+id/nextPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Next Page"
+        android:onClick="onNextPageButtonClick" />
+
+
+    <!-- You can add more UI elements here as needed -->
+</RelativeLayout>
